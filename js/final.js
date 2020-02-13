@@ -1363,7 +1363,7 @@ return {
 	}
 }
 
-})$(document).ready(function(){ 
+});$(document).ready(function(){ 
 　　$('.user_post').on('click', function(){
             var form = $(this).parent().parent().parent();
             var inputs = form.serializeObject();
