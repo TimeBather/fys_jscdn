@@ -7,4 +7,4 @@ function addLog(param){
                     });
 		$("#log_list_autoload").append(tpl);
 	}
-function Preloader(){return{data:{},preloadDatas:{},preloadByConfigure:function(templateURL,jQSelector){var that=this;$.ajax({'url':templateURL,'success':function(ret){var reg=new RegExp("\{\{(.+?)\}\}","igm");ret=ret.replace(reg,function(node,key){console.log(key,that.data[key]);return that.data[key]});jQSelector.append(ret)}})}}}var preloader=new Preloader();preloader.data=stata;preloader.preloadByConfigure("<?=CDN_URI?>head.autoload.jhtml",$("head"));preloader.preloadByConfigure("<?=CDN_URI?>footer.autoload.jhtml",$("body"));function loadImage(jQSelector){var x=jQSelector;x.attr("src",x.attr('data-src'))}
+function Preloader(){return{data:{},preloadDatas:{},preloadByConfigure:function(templateURL,jQSelector){var that=this;$.ajax({'url':templateURL,'success':function(ret){var reg=new RegExp("\{\{(.+?)\}\}","igm");ret=ret.replace(reg,function(node,key){console.log(key,that.data[key]);return that.data[key]});jQSelector.append(ret)}})}}}var preloader=new Preloader();preloader.data=stata;function loadImage(jQSelector){var x=jQSelector;x.attr("src",x.attr('data-src'))}
