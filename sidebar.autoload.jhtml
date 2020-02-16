@@ -1,0 +1,110 @@
+<div class="sidebar">
+	    <article class="panel-side">
+	        <div class="fly_weibo">
+        	<ul class="blogger_side">
+        	    <div id="weiboShow" style="
+    background-color: #fff;
+    min-height: 340px;
+    padding: 0;
+    border-radius: 18px;
+">
+        	        <div class="grid-weibo-show shadow-hover">
+        		        <header id="shead">&nbsp;</header>
+        		        <div id="user-login" class="contentt">
+        			        <div class="boketx">
+<img src="{{bokeURL}}" style="
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 50%;">
+        	                	<div class="overlay">
+                                </div>
+        				        <span class="rank"></span>
+        			        </div>
+        			        <h4>{{bokeMC}}</h4>
+        			        <p class="seta">{{bokeQM}}</p>
+							
+        			       <div class="author-social">
+<span class="author-blog"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={{nexqq}}&amp;site=qq&amp;menu=yes" style="
+    background-color: #ff5e5c;
+    :
+    font-size: 15px
+    color: #fff;
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 15px;
+    color: #fff;
+    "><i class="fa fa-thumbs-up"></i>联系博主</a>
+</span>
+<span class="author-weibo"> <a href="{{wbdz}}" style="background-color: #19b5fe;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 25px;
+    font-size: 15px;
+"><i class="fa fa-thumbs-up"></i>关注微博</a>
+</span>
+        		        </div>
+        	        </div>
+                </div>
+            </ul>
+            </div>
+	    </article>
+<div class="widget widget-tops wow zoomIn affix-top" style="visibility: visible;animation-name: zoomIn;top: 0px;margin: 10px;width: 360px;left: -10;">
+	<ul class="widget-nav">
+		<li class="active">会员中心</li>
+		<li class="">网站公告</li>
+		<li class="">顶置推荐</li>
+		<li class="">联系我们</li>
+	</ul>
+	<ul class="widget-navcontent">
+		<li class="item item-02 active">
+			<span class="jhtml-if" style="display:{{if-not-logined}}">
+		<h4>需要登录才能进入会员中心</h4>
+						<p>
+							<a href="javascript:;" class="btn btn-primary signin-loader">立即登录</a>
+							<a href="javascript:;" class="btn btn-default signup-loader">现在注册</a>
+						</p>
+						</li>
+						</span>
+						<span class="jhtml-if" style="display:{{if-logined}}">
+		<dl>
+			<dt><img alt="" src="{{avatar}}" class="avatar avatar-50 photo" height="50" width="50"></dt>
+			<dd> <span class="text-muted">{{nick}} {{email}}</span></dd>
+		</dl>
+		<ul>
+			<li><a href="{{BLOG_URL}}?user&posts">我的文章</a></li>
+			<li><a href="{{BLOG_URL}}?user&comments">我的评论</a></li>
+			<li><a href="{{BLOG_URL}}?user&info">修改资料</a></li>
+			<li><a href="{{BLOG_URL}}?user&password">修改密码</a></li>
+		</ul>
+		</span>
+		</li>
+		<li class="item item-01">
+		<ul>
+			{{home_text}}
+		</ul>
+			<li class="item item-01">
+		<ul>
+			{{dingzhi_text}}
+		</ul>
+		</li>
+		<li class="item item-04">
+		<h2>遇到疑问,可以联系我或给我留言</h2>
+		<a class="btn btn-success sns-wechat" href="javascript:;" title="关注”我的微信“" data-src="{{weixinerweima}}"><i class="fa fa-weixin"></i> 公众号</a><a target="_blank" class="btn btn-info" href="http://wpa.qq.com/msgrd?v=3&amp;uin={{nexqq}}&amp;site=qq&amp;menu=yes"><i class="fa fa-qq"></i> QQ联系</a></li>
+	</ul>
+</div>
+<div class="widget widget_ui_adsf widget_fix"></span><h3> AD
+{{AD}}
+</h3>
+</div>
+<div class="widget widget_ui_statistics wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+	<h3>站点统计</h3>
+    <ul>
+    
+    <li><a>文章总数：{{logNum}}篇</a></li>
+    <li><a>评论总数：{{comnum}}条</a></li>	
+	<li><a>运行天数: {{runtime}}天</a></li>
+    </ul>
+</div>
+</div>
+</section>
